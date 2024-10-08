@@ -9,7 +9,7 @@ body {
     font-family: 'Poppins', sans-serif;
     background-color: #f4f4f9;
     color: #333;
-    line-height: 1.6;
+    line-height: 1.5;
 }
 
 /* Container class */
@@ -38,22 +38,22 @@ body {
 }
 
 .home-title {
-    font-size: 2.5rem;
+    font-size: 2.2rem; /* Reduced size */
 }
 
 .home-subtitle {
-    font-size: 1.5rem;
+    font-size: 1.4rem; /* Reduced size */
 }
 
 .home-description {
     max-width: 600px;
     margin-bottom: 20px;
-    font-size: 1.1rem;
+    font-size: 1rem; /* Reduced size */
 }
 
 .home img {
-    width: 250px;
-    height: 250px;
+    width: 200px; /* Reduced size */
+    height: 200px; /* Reduced size */
     object-fit: cover;
     border-radius: 50%;
     margin-bottom: 20px;
@@ -62,7 +62,7 @@ body {
 }
 
 .button {
-    padding: 12px 25px;
+    padding: 10px 20px;
     background-color: #fff;
     color: #333;
     border-radius: 30px;
@@ -71,7 +71,7 @@ body {
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 0.9rem; /* Reduced size */
 }
 
 .button:hover {
@@ -92,26 +92,23 @@ body {
 }
 
 .home-scroll {
-    margin-top: 40px;
+    margin-top: 30px;
 }
 
 .home-scroll-button {
-    font-size: 1.1rem;
+    font-size: 1rem; /* Reduced size */
     color: #fff;
-    display: inline-flex;
-    align-items: center;
-    cursor: pointer;
 }
 
 /* Skills Section */
 .skills {
-    padding: 80px 20px;
+    padding: 50px 20px; /* Adjusted padding */
     background-color: #fff;
     text-align: center;
 }
 
 .skills-title {
-    font-size: 2.5rem;
+    font-size: 2.2rem; /* Reduced size */
     color: #ff6f61;
     margin-bottom: 10px;
     text-transform: uppercase;
@@ -132,9 +129,9 @@ body {
 .skills-content {
     width: 45%;
     margin: 20px;
-    padding: 30px;
+    padding: 20px; /* Adjusted padding */
     background: #f9f9f9;
-    border-radius: 20px;
+    border-radius: 15px; /* Slightly rounded */
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.4s, box-shadow 0.3s;
     animation: fadeInUp 1s;
@@ -146,17 +143,18 @@ body {
 }
 
 .skills-header {
-    margin-bottom: 20px;
+    margin-bottom: 15px; /* Adjusted spacing */
 }
 
 .skills-name {
-    font-size: 1.3rem;
+    font-size: 1.2rem; /* Reduced size */
     font-weight: bold;
 }
 
 .skills-icon {
     font-size: 2rem;
     color: #ff6f61;
+    margin-right: 10px; /* Space between icon and text */
 }
 
 .skills-bar {
@@ -169,19 +167,19 @@ body {
 
 /* Qualifications Section */
 .qualification {
-    padding: 80px 20px;
+    padding: 50px 20px; /* Adjusted padding */
     background-color: #f4f4f9;
     text-align: center;
 }
 
 .qualification-title {
-    font-size: 2.5rem;
+    font-size: 2.2rem; /* Reduced size */
     color: #ff6f61;
     margin-bottom: 10px;
 }
 
 .qualification-subtitle {
-    font-size: 1rem;
+    font-size: 1rem; /* Reduced size */
     color: #777;
     margin-bottom: 20px;
 }
@@ -192,13 +190,13 @@ body {
 
 /* Services Section */
 .services {
-    padding: 80px 20px;
+    padding: 50px 20px; /* Adjusted padding */
     background-color: #fff;
     text-align: center;
 }
 
 .services-title {
-    font-size: 2.5rem;
+    font-size: 2.2rem; /* Reduced size */
     color: #ff6f61;
     margin-bottom: 20px;
 }
@@ -230,13 +228,13 @@ body {
 
 /* Portfolio Section */
 .portfolio {
-    padding: 80px 20px;
+    padding: 50px 20px; /* Adjusted padding */
     background-color: #f4f4f9;
     text-align: center;
 }
 
 .portfolio-title {
-    font-size: 2.5rem;
+    font-size: 2.2rem; /* Reduced size */
     color: #ff6f61;
     margin-bottom: 20px;
 }
@@ -261,13 +259,13 @@ body {
 
 /* Testimonials Section */
 .testimonial {
-    padding: 80px 20px;
+    padding: 50px 20px; /* Adjusted padding */
     background-color: #fff;
     text-align: center;
 }
 
 .testimonial-title {
-    font-size: 2.5rem;
+    font-size: 2.2rem; /* Reduced size */
     color: #ff6f61;
     margin-bottom: 20px;
 }
@@ -285,17 +283,18 @@ body {
     background: #f9f9f9;
     border-radius: 15px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 1s;
 }
 
 /* Contact Section */
 .contact {
-    padding: 80px 20px;
+    padding: 50px 20px; /* Adjusted padding */
     background-color: #f4f4f9;
     text-align: center;
 }
 
 .contact-title {
-    font-size: 2.5rem;
+    font-size: 2.2rem; /* Reduced size */
     color: #ff6f61;
     margin-bottom: 20px;
 }
@@ -319,6 +318,45 @@ body {
     max-width: 600px;
 }
 
+/* Contact Form */
+.contact-form {
+    width: 80%;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 0.9rem; /* Reduced size */
+    transition: border-color 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #ff6f61;
+    outline: none;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background-color: #ff6f61;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem; /* Reduced size */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #de5d83;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .skills-content,
@@ -334,15 +372,23 @@ body {
     }
 
     .home-title {
-        font-size: 2rem;
+        font-size: 1.8rem; /* Further reduced */
     }
 
     .home-subtitle {
-        font-size: 1.2rem;
+        font-size: 1.2rem; /* Further reduced */
     }
 
     .home-description {
-        font-size: 1rem;
+        font-size: 0.9rem; /* Further reduced */
+    }
+
+    .contact-title,
+    .qualification-title,
+    .services-title,
+    .portfolio-title,
+    .testimonial-title {
+        font-size: 2rem; /* Further reduced */
     }
 }
 
@@ -386,4 +432,3 @@ body {
         width: 100%;
     }
 }
- 
