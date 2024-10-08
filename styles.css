@@ -324,4 +324,113 @@ section {
 }
 
 .testimonial-img:hover {
-    
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.testimonial-name {
+    font-size: 1.5rem;
+    color: #007bff;
+    margin-bottom: 0.5rem;
+}
+
+.testimonial-description {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.8;
+}
+
+/* ================= CONTACT SECTION ================= */
+.contact {
+    background-color: #007bff;
+    color: white;
+    padding: 5rem 0;
+    text-align: center;
+    animation: fadeIn 1.5s ease;
+}
+
+.contact-title {
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 2rem;
+    animation: slideUp 1.5s ease;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact-item {
+    flex: 1;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    background-color: #0056b3;
+    border-radius: 0.5rem;
+    color: white;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.contact-item:hover {
+    background-color: #004080;
+    transform: translateY(-5px);
+}
+
+.contact-form {
+    width: 100%;
+    max-width: 600px;
+    margin: 2rem auto;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 1rem;
+    margin: 0.5rem 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+    outline: none;
+    border: 2px solid white;
+}
+
+.contact-form button {
+    padding: 1rem 2rem;
+    background-color: white;
+    color: #007bff;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #e0e0e0;
+    transform: translateY(-5px);
+}
+
+/* ================= FOOTER ================= */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.footer-text {
+    font-size: 1rem;
+    color: #bbb;
+    animation: fadeIn 1.5s ease;
+}
+
+.footer a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: #0056b3;
+        }
