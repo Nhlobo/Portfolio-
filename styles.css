@@ -299,4 +299,59 @@ body {
         font-size: 1.4rem; /* Smaller subtitle */
     }
 
-    .skills-container, .portfolio-grid
+    .skills-container, .portfolio-grid {
+        flex-direction: column; /* Stack items on smaller screens */
+        align-items: center; /* Center align items */
+    }
+
+    .skill, .service {
+        width: 80%; /* Full width for skills and services on smaller screens */
+    }
+
+    .testimonial-content {
+        width: 80%; /* Full width for testimonials on smaller screens */
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        width: 90%; /* Wider inputs on smaller screens */
+    }
+
+    .contact-form button {
+        width: 90%; /* Button width on smaller screens */
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px); /* Slide from top */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* Final position */
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-30px); /* Slide in from left */
+    }
+    100% {
+        transform: translateX(0); /* Final position */
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px); /* Slide from below */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* Final position */
+    }
+}
+
+/* End of CSS */
