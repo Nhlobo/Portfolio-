@@ -360,3 +360,72 @@ footer a:hover {
   to {
     opacity: 1;
     transform: translateY(0);
+    }
+}
+
+/* Scroll-to-Top Button */
+#scrollTopBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #16a085;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
+  display: none;
+  transition: all 0.3s ease;
+}
+
+#scrollTopBtn:hover {
+  background-color: #1abc9c;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Show button when scrolled */
+.show-scroll {
+  display: block;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  #home h1 {
+    font-size: 2.5rem;
+  }
+
+  #home p {
+    font-size: 1.2rem;
+  }
+
+  .skill-item,
+  .service-item {
+    width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  #home h1 {
+    font-size: 2rem;
+  }
+
+  #home p {
+    font-size: 1rem;
+  }
+
+  .skill-item,
+  .service-item {
+    width: 100%;
+  }
+
+  nav ul {
+    font-size: 0.9rem;
+  }
+}
