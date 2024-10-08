@@ -353,3 +353,161 @@ a {
     }
 }
 
+@media (max-width: 480px) {
+    .home-title {
+        font-size: 2rem;
+    }
+
+    .home-description {
+        font-size: 0.9rem;
+    }
+
+    .skills-title,
+    .services-title,
+    .portfolio-title,
+    .testimonial-title {
+        font-size: 1.8rem;
+    }
+
+    .portfolio-content,
+    .testimonial-content {
+        width: 100%;
+    }
+
+    .home-scroll {
+        margin-top: 30px;
+    }
+}
+
+/* Additional world-class animations */
+
+/* Smooth fade-in effect for sections */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+section {
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+/* Slide-in from left for portfolio items */
+@keyframes slideInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.portfolio-content {
+    animation: slideInLeft 1.2s ease-in-out forwards;
+}
+
+/* Hover scaling effect on buttons */
+.button {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Zoom-in animation for images */
+@keyframes zoomIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+img {
+    animation: zoomIn 1s ease-in-out forwards;
+}
+
+/* Bounce animation for scroll button */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.home-scroll {
+    animation: bounce 2s infinite;
+}
+
+/* Subtle shadow hover effect for portfolio items */
+.portfolio-item {
+    transition: box-shadow 0.3s ease;
+}
+
+.portfolio-item:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Slide-in from bottom for services content */
+@keyframes slideInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.services-content {
+    animation: slideInBottom 1.3s ease-in-out forwards;
+}
+
+/* Keyframes for button glow effect */
+@keyframes glowing {
+    0% {
+        box-shadow: 0 0 5px rgba(0, 255, 255, 0.5);
+    }
+    50% {
+        box-shadow: 0 0 20px rgba(0, 255, 255, 1);
+    }
+    100% {
+        box-shadow: 0 0 5px rgba(0, 255, 255, 0.5);
+    }
+}
+
+/* Glow effect for CTA buttons */
+.cta-button {
+    animation: glowing 2s infinite;
+}
+
+/* Footer slide-up animation */
+@keyframes slideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+footer {
+    animation: slideUp 1s ease-in-out forwards;
+        }
