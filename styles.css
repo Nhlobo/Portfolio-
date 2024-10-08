@@ -83,6 +83,51 @@ body {
 .skill p {
     font-size: 1rem; /* Skill description size */
 }
+/* Services Section */
+.services {
+    padding: 60px 20px;
+    background-color: #ffffff; /* White background */
+    text-align: center;
+}
+
+.services-title {
+    font-size: 2.8rem; /* Title size */
+    margin-bottom: 20px;
+    color: #6a82fb; /* Title color */
+}
+
+.services-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service {
+    width: 30%; /* Column layout for services */
+    margin: 20px;
+    padding: 20px;
+    border-radius: 15px;
+    background: rgba(250, 250, 250, 0.9); /* Semi-transparent background */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    transition: transform 0.3s; /* Hover effect */
+    animation: fadeInUp 0.8s ease-in-out; /* Fade-in animation */
+}
+
+.service h3 {
+    font-size: 1.8rem; /* Service title size */
+    color: #6a82fb; /* Service title color */
+}
+
+.service p {
+    font-size: 1rem; /* Service description size */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .service {
+        width: 80%; /* Full width for services on smaller screens */
+    }
+}
 
 /* Portfolio Section */
 .portfolio {
