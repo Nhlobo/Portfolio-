@@ -109,230 +109,229 @@ body {
 
 /* Skills Section */
 .skills {
-    padding: 80px 0;
+    padding: 80px 20px;
     background-color: #fff;
     text-align: center;
+    position: relative;
+    overflow: hidden;
 }
 
-.section-title {
-    font-size: 2.5rem;
-    color: #333;
+.skills-title {
+    font-size: 2.8rem;
+    color: #ff5f6d;
     margin-bottom: 40px;
-    animation: fadeIn 1s;
+    text-transform: uppercase;
+    animation: fadeIn 1s ease-in-out;
 }
 
 .skills-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: flex-start;
     flex-wrap: wrap;
-    animation: slideIn 1s;
+    animation: slideUp 1.2s ease-in-out;
 }
 
 .skills-content {
-    width: 45%;
-    margin: 20px 0;
-    padding: 20px;
+    width: 30%;
+    margin: 20px;
+    padding: 30px;
     background: #f9f9f9;
-    border-radius: 10px;
+    border-radius: 20px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
+    position: relative;
+    transition: transform 0.4s, box-shadow 0.3s;
 }
 
 .skills-content:hover {
     transform: scale(1.05);
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
+}
+
+.skills-icon {
+    font-size: 3rem;
+    color: #ff5f6d;
+    margin-bottom: 20px;
+    animation: bounceIn 1s ease-in-out;
 }
 
 .skills-header {
     margin-bottom: 20px;
-}
-
-.skills-title {
-    font-size: 1.8rem;
-    color: #ff5f6d;
-}
-
-.skills-list {
-    margin-top: 20px;
-}
-
-.skills-data {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 15px;
+    color: #333;
 }
 
 .skills-name {
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     font-weight: bold;
+    margin-bottom: 10px;
 }
 
 .skills-bar {
-    width: 70%;
+    width: 100%;
     height: 8px;
     background: #ffc371;
     border-radius: 5px;
+    animation: growBar 1.5s ease-in-out;
+}
+
+.skills-level {
+    font-size: 0.9rem;
+    color: #777;
+    margin-top: 5px;
 }
 
 /* Qualifications Section */
 .qualifications {
-    padding: 80px 0;
-    background-color: #fff;
+    padding: 80px 20px;
+    background-color: #f4f4f9;
     text-align: center;
 }
 
 .qualifications-title {
-    font-size: 2.5rem;
-    color: #333;
+    font-size: 2.8rem;
+    color: #ff5f6d;
     margin-bottom: 40px;
-    animation: fadeIn 1s;
+    text-transform: uppercase;
+    animation: fadeIn 1s ease-in-out;
 }
 
 .qualifications-list {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    animation: slideIn 1s;
+    list-style-type: none;
+    padding: 0;
+    animation: slideUp 1.2s ease-in-out;
 }
 
-.qualification {
-    width: 30%;
-    margin: 20px;
-    padding: 20px;
-    background: #f9f9f9;
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
+.qualifications-item {
+    font-size: 1.3rem;
+    margin: 20px 0;
+    position: relative;
+    padding-left: 40px;
+    animation: fadeInUp 1s ease-in-out;
 }
 
-.qualification:hover {
-    transform: scale(1.05);
-}
-
-.qualification-title {
-    font-size: 1.5rem;
+.qualifications-item::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
     color: #ff5f6d;
-    margin-bottom: 10px;
-}
-
-.qualification-description {
-    font-size: 1rem;
+    font-size: 1.8rem;
 }
 
 /* Testimonials Section */
 .testimonials {
-    padding: 80px 0;
+    padding: 80px 20px;
     background-color: #fff;
     text-align: center;
+    position: relative;
 }
 
 .testimonials-title {
-    font-size: 2.5rem;
-    color: #333;
+    font-size: 2.8rem;
+    color: #ff5f6d;
     margin-bottom: 40px;
-    animation: fadeIn 1s;
+    text-transform: uppercase;
+    animation: fadeIn 1s ease-in-out;
 }
 
 .testimonials-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
-    animation: slideIn 1s;
 }
 
 .testimonial {
     width: 30%;
     margin: 20px;
-    padding: 20px;
+    padding: 30px;
     background: #f9f9f9;
-    border-radius: 10px;
+    border-radius: 20px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
+    position: relative;
+    animation: slideUp 1.2s ease-in-out;
+    transition: transform 0.4s, box-shadow 0.3s;
 }
 
 .testimonial:hover {
     transform: scale(1.05);
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
 }
 
-.testimonial-text {
-    font-size: 1rem;
-    margin-bottom: 15px;
+.testimonial p {
+    font-style: italic;
+    color: #555;
 }
 
 .testimonial-author {
     font-weight: bold;
+    color: #333;
+    margin-top: 20px;
 }
 
 /* Contact Form Section */
 .contact {
-    padding: 80px 0;
-    background-color: #fff;
+    padding: 80px 20px;
+    background-color: #f4f4f9;
     text-align: center;
 }
 
 .contact-title {
-    font-size: 2.5rem;
-    color: #333;
+    font-size: 2.8rem;
+    color: #ff5f6d;
     margin-bottom: 40px;
-    animation: fadeIn 1s;
+    text-transform: uppercase;
+    animation: fadeIn 1s ease-in-out;
 }
 
 .contact-form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    animation: slideIn 1s;
+    animation: fadeInUp 1.2s ease-in-out;
 }
 
-.contact-input {
+.contact-form input,
+.contact-form textarea {
     width: 80%;
     max-width: 600px;
     padding: 15px;
     margin: 10px 0;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
 }
 
-.contact-textarea {
-    height: 150px;
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #ff5f6d;
+    outline: none;
 }
 
-.contact-button {
-    padding: 10px 25px;
+.contact-form button {
+    padding: 15px 30px;
     background-color: #ff5f6d;
     color: #fff;
     border: none;
     border-radius: 5px;
+    font-size: 1rem;
     cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
+    transition: background-color 0.3s;
 }
 
-.contact-button:hover {
+.contact-form button:hover {
     background-color: #ffc371;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
     .skills-content,
-    .qualification,
     .testimonial {
-        width: 100%;
+        width: 90%;
     }
 
-    .skills-container,
-    .qualifications-list,
-    .testimonials-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .home img {
-        width: 250px;
-        height: 250px;
-    }
-
-    .button {
-        font-size: 0.9rem;
+    .qualifications-item {
+        font-size: 1rem;
     }
 }
 
@@ -340,32 +339,8 @@ body {
 @keyframes fadeIn {
     from {
         opacity: 0;
-        transform: translateY(20px);
     }
     to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes slideIn {
-    from {
-        opacity: 0;
-        transform: translateX(-20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-@keyframes zoomIn {
-    from {
-        transform: scale(0.5);
-        opacity: 0;
-    }
-    to {
-        transform: scale(1);
         opacity: 1;
     }
 }
@@ -373,10 +348,47 @@ body {
 @keyframes fadeInUp {
     from {
         opacity: 0;
-        transform: translateY(20px);
+        transform: translateY(30px);
     }
     to {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
     }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounceIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.3);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.05);
+    }
+    70% {
+        transform: scale(0.9);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes growBar {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
