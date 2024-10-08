@@ -83,6 +83,25 @@ body {
 .skill p {
     font-size: 1rem; /* Skill description size */
 }
+
+/* Qualifications Section */
+.qualifications {
+    padding: 60px 20px;
+    background-color: #ffffff; /* White background */
+    text-align: center;
+}
+
+.qualifications-title {
+    font-size: 2.8rem; /* Title size */
+    margin-bottom: 20px;
+    color: #fc5c7d; /* Title color */
+}
+
+.qualification {
+    margin: 20px 0; /* Margin for each qualification */
+    font-size: 1.2rem; /* Qualification font size */
+}
+
 /* Services Section */
 .services {
     padding: 60px 20px;
@@ -280,68 +299,4 @@ body {
         font-size: 1.4rem; /* Smaller subtitle */
     }
 
-    .skills-container, .portfolio-grid {
-        flex-direction: column; /* Stack columns on smaller screens */
-    }
-
-    .contact-form input, 
-    .contact-form textarea {
-        width: 90%; /* Input width on smaller screens */
-    }
-
-    .footer {
-        font-size: 0.8rem; /* Smaller footer text */
-    }
-}
-
-@media (max-width: 480px) {
-    .home-title {
-        font-size: 2rem; /* Further reduced title size */
-    }
-
-    .about-title, 
-    .skills-title, 
-    .portfolio-title, 
-    .testimonial-title, 
-    .contact-title {
-        font-size: 2rem; /* Consistent title size */
-    }
-
-    .skills-container,
-    .portfolio-grid,
-    .testimonial-container {
-        width: 90%; /* Full width on mobile */
-    }
-}
-
-/* Animations */
-@keyframes slideIn {
-    from {
-        opacity: 0;
-        transform: translateY(-30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-    }
+    .skills-container, .portfolio-grid
