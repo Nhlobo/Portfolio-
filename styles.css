@@ -299,13 +299,146 @@ body {
     margin-top: 10px;
 }
 
-/* ================= Testimonial Section ================= */
-.testimonial {
-    padding: 80px 20px;
-    background-color: #e7e7e7;
-    text-align: center;
+ /* ================= Media Queries ================= */
+@media (max-width: 1200px) {
+    .services-content,
+    .portfolio-content,
+    .testimonial-content {
+        width: 45%; /* Responsive width adjustment for medium screens */
+    }
+
+    .home-title {
+        font-size: 2.5rem; /* Smaller title on medium screens */
+    }
+
+    .home-subtitle {
+        font-size: 1.25rem; /* Smaller subtitle on medium screens */
+    }
 }
 
-.testimonial-container {
-    display: flex;
-    justify-content:
+@media (max-width: 768px) {
+    .services-content,
+    .portfolio-content,
+    .testimonial-content {
+        width: 100%; /* Full width on small screens */
+        margin: 10px 0; /* Reduced margin for better spacing */
+    }
+
+    .home {
+        padding: 50px 10px; /* Reduced padding for smaller screens */
+    }
+
+    .home-title {
+        font-size: 2rem; /* Smaller title on small screens */
+    }
+
+    .home-subtitle {
+        font-size: 1rem; /* Smaller subtitle on small screens */
+    }
+}
+
+/* ================= Image Styling ================= */
+.home-img,
+.portfolio-img {
+    width: 100%;
+    height: 250px; /* Fixed height for consistent image size */
+    object-fit: cover; /* Cover to maintain aspect ratio */
+    transition: transform 0.4s ease, box-shadow 0.4s ease; /* Transition for smooth effects */
+}
+
+.home-img:hover,
+.portfolio-img:hover {
+    transform: scale(1.05); /* Slightly enlarges image on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Enhanced shadow effect on hover */
+}
+
+/* ================= Button Styling ================= */
+.button {
+    cursor: pointer; /* Change cursor to pointer */
+}
+
+.services-button {
+    display: inline-block; /* Display as inline-block */
+    padding: 10px 20px;
+    margin-top: 15px;
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+    animation: fadeInUp 2s ease forwards; /* Animation */
+}
+
+.services-button:hover {
+    background-color: #004494; /* Darker on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+}
+
+/* ================= Modal Styling ================= */
+.services-modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed position for modals */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centering the modal */
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: 100; /* Higher z-index for modal */
+    animation: fadeIn 0.5s ease forwards; /* Fade-in animation for modal */
+}
+
+/* ================= Testimonial Content ================= */
+.testimonial-content {
+    display: flex; /* Flex for testimonial items */
+    flex-direction: column; /* Vertical stacking */
+    align-items: center; /* Center alignment */
+    text-align: center; /* Centered text */
+    margin: 20px; /* Margin for spacing */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Padding for content */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    transition: transform 0.3s ease; /* Smooth scaling transition */
+}
+
+.testimonial-content:hover {
+    transform: scale(1.05); /* Scale effect on hover */
+}
+
+/* ================= Animations ================= */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* ================= Responsive Image Gallery ================= */
+.portfolio-content {
+    position: relative;
+    overflow: hidden; /* Ensures content does not overflow */
+}
+
+.portfolio-img {
+    border-radius: 10px; /* Add rounded corners */
+}
+
+/* ================= Footer Section ================= */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #0056b3;
+    color: white;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 1rem;
+    animation: fadeIn 2s ease forwards; /* Fade-in for footer */
+    }       
