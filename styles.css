@@ -1,4 +1,4 @@
-/* Global Styles */
+/* CSS Reset */
 * {
     margin: 0;
     padding: 0;
@@ -6,326 +6,323 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
-    color: #333;
-    background-color: #f0f0f0;
+    font-family: 'Arial', sans-serif;
     line-height: 1.6;
-    transition: all 0.3s ease-in-out;
-    scroll-behavior: smooth;
+    color: #333;
+    background-color: #f4f4f4;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-weight: 700;
-    color: #222;
-    margin-bottom: 1rem;
-    text-transform: uppercase;
-}
-
-p {
-    font-size: 1.1rem;
-    margin-bottom: 1.5rem;
-}
-
-a {
-    text-decoration: none;
-    color: #007bff;
-    transition: color 0.3s ease;
-}
-
-a:hover {
-    color: #0056b3;
-}
-
-/* Header */
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-    background-color: #333;
-    color: white;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 999;
-    animation: fadeInDown 0.5s ease-in-out;
-}
-
-header .logo {
-    font-size: 1.8rem;
-    font-weight: bold;
-}
-
-header nav ul {
-    list-style: none;
-    display: flex;
-    gap: 1.5rem;
-}
-
-header nav ul li a {
-    font-size: 1rem;
-    color: white;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-}
-
-header nav ul li a:hover {
-    background-color: #ff6347;
-}
-
-/* Hero Section */
-section.hero {
-    background-image: url('hero-image.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
+/* ================= Home Section ================= */
+.home {
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    padding: 100px 20px;
+    background-color: #0056b3;
     color: white;
     position: relative;
-    animation: zoomIn 1.5s ease-in-out;
+    transition: background-color 0.5s ease; /* Smooth background color transition */
 }
 
-.hero::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+.home:hover {
+    background-color: #004494; /* Darker shade on hover */
 }
 
-.hero h1 {
-    font-size: 3rem;
-    animation: slideInLeft 1.5s ease;
-}
-
-.hero p {
-    font-size: 1.5rem;
-    animation: slideInRight 1.5s ease;
-}
-
-.hero a {
-    padding: 0.75rem 2rem;
-    background-color: #ff6347;
-    color: white;
-    border-radius: 25px;
-    font-size: 1rem;
-    animation: bounce 2s infinite;
-}
-
-.hero a:hover {
-    background-color: #e5533b;
-}
-
-/* Skills Section */
-section.skills {
-    padding: 3rem 2rem;
-    background-color: white;
-    text-align: center;
-}
-
-.skills h2 {
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
-    animation: fadeInUp 1s ease-in-out;
-}
-
-.skills .skill {
-    display: inline-block;
-    width: 30%;
-    margin: 1rem;
-    padding: 1rem;
-    background-color: #f8f8f8;
-    border-radius: 8px;
-    transition: transform 0.3s ease;
-}
-
-.skills .skill:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-}
-
-.skills .skill h3 {
-    font-size: 1.5rem;
-}
-
-.skills .progress-bar {
-    width: 80%;
-    height: 8px;
-    background-color: #ddd;
-    border-radius: 50px;
-    margin: 1rem auto;
-    animation: fillBar 2s ease-in-out;
-}
-
-.skills .progress-bar .progress {
-    width: 0;
-    height: 100%;
-    background-color: #007bff;
-    animation: fillProgress 2s forwards;
-}
-
-/* Qualification Section */
-section.qualifications {
-    padding: 3rem 2rem;
-    background-color: #f4f4f4;
-    text-align: center;
-}
-
-.qualifications h2 {
-    font-size: 2.5rem;
-    animation: fadeInUp 1s ease-in-out;
-}
-
-.qualifications .qualification {
+.home-container {
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 1.5rem;
-}
-
-.qualifications .qualification div {
-    flex: 1;
-    margin: 0 1rem;
-    padding: 1rem;
-    background-color: #fff;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-}
-
-.qualifications .qualification div:hover {
-    transform: translateY(-10px);
-}
-
-/* Services Section */
-section.services {
-    padding: 3rem 2rem;
-    background-color: white;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
+    transition: transform 0.5s ease; /* Smooth scale effect */
 }
 
-.services h2 {
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
-    animation: fadeInUp 1s ease-in-out;
+.home:hover .home-container {
+    transform: scale(1.05); /* Slightly scale up on hover */
 }
 
-.services .service {
-    display: inline-block;
-    width: 30%;
-    margin: 1rem;
-    padding: 2rem;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+.home-title {
+    font-size: 3rem;
+    animation: fadeInDown 1s ease forwards;
 }
 
-.services .service:hover {
-    transform: translateY(-10px);
+.home-subtitle {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    animation: fadeInUp 1s ease forwards;
 }
 
-/* Testimonials Section */
-section.testimonials {
-    padding: 3rem 2rem;
-    background-color: #f9f9f9;
-    text-align: center;
-}
-
-.testimonials h2 {
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
-    animation: fadeInUp 1s ease-in-out;
-}
-
-.testimonials .testimonial {
-    display: inline-block;
-    width: 45%;
-    margin: 1rem;
-    padding: 2rem;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-}
-
-.testimonials .testimonial:hover {
-    transform: translateY(-10px);
-}
-
-/* Contact Section */
-section.contact {
-    padding: 3rem 2rem;
-    background-color: #f0f0f0;
-    text-align: center;
-}
-
-.contact h2 {
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
-    animation: fadeInUp 1s ease-in-out;
-}
-
-.contact form {
+.home-description {
     max-width: 600px;
-    margin: 0 auto;
-    padding: 2rem;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    font-size: 1rem;
+    animation: fadeInUp 1.5s ease forwards;
 }
 
-.contact form input, .contact form textarea {
-    width: 100%;
-    padding: 1rem;
-    margin-bottom: 1.5rem;
-    border: 1px solid #ccc;
+.button {
+    background-color: #ffcc00;
+    color: #333;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
     border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    animation: fadeInUp 2s ease forwards;
 }
 
-.contact form input[type="submit"] {
-    background-color: #ff6347;
+.button:hover {
+    background-color: #e6b800;
+    transform: scale(1.1); /* Slightly enlarges button on hover */
+}
+
+.home-img {
+    animation: slideIn 1s ease forwards;
+    margin: 20px 0;
+    border-radius: 10px; /* Rounded corners for images */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
+}
+
+.home-social {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.home-social-icon {
+    color: white;
+    font-size: 1.5rem;
+    margin: 0 10px;
+    transition: transform 0.3s ease, color 0.3s ease; /* Smooth transition for icons */
+}
+
+.home-social-icon:hover {
+    transform: scale(1.2);
+    color: #ffcc00; /* Change color on hover */
+}
+
+.home-scroll {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.home-scroll-button {
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.home-scroll-button:hover {
+    transform: translateY(5px);
+}
+
+/* ================= Skills Section ================= */
+.skills {
+    padding: 80px 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    font-weight: bold; /* Bold title */
+}
+
+.section-subtitle {
+    font-size: 1.25rem;
+    color: #888;
+    margin-bottom: 40px;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.skills-content {
+    width: 45%;
+    margin: 20px 0;
+    position: relative;
+    overflow: hidden; /* Ensure overflow hidden for animations */
+    border-radius: 10px; /* Add rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    transition: transform 0.3s ease; /* Smooth transition for scaling */
+}
+
+.skills-content:hover {
+    transform: scale(1.05); /* Scale effect on hover */
+}
+
+.skills-title {
+    font-size: 1.75rem;
+    font-weight: bold; /* Bold title for skills */
+}
+
+.skills-data {
+    margin: 20px 0;
+}
+
+.skills-name {
+    font-size: 1.25rem;
+}
+
+.skills-bar {
+    background: #0056b3;
+    height: 10px;
+    border-radius: 5px;
+    animation: expand 1s ease forwards;
+}
+
+/* ================= Qualification Section ================= */
+.qualification {
+    padding: 80px 20px;
+    background-color: #e7e7e7;
+    text-align: center;
+}
+
+.qualification-tabs {
+    margin-bottom: 20px;
+}
+
+.qualification-button {
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: #0056b3;
     color: white;
     border: none;
-    padding: 1rem 2rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s; /* Added transform transition */
 }
 
-.contact form input[type="submit"]:hover {
-    background-color: #e5533b;
+.qualification-button:hover {
+    background-color: #004494;
+    transform: translateY(-2px); /* Slight lift on hover */
 }
 
-/* Footer */
-footer {
-    background-color: #222;
-    color: white;
-    padding: 2rem 0;
+/* ================= Services Section ================= */
+.services {
+    padding: 80px 20px;
     text-align: center;
 }
 
-footer p {
-    font-size: 1rem;
-    margin: 0;
+.services-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
-footer a {
-    color: white;
-    font-weight: bold;
+.services-content {
+    width: 30%;
+    margin: 20px;
+    position: relative;
+    overflow: hidden; /* Ensure overflow hidden for animations */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for cards */
+    transition: transform 0.3s ease; /* Smooth transition for scaling */
 }
 
-footer a:hover {
-    color: #ff6347;
+.services-content:hover {
+    transform: scale(1.05); /* Scale effect on hover */
 }
 
-/* Keyframes for Animations */
+.services-modal {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+    animation: fadeIn 0.5s ease forwards;
+}
+
+.services-button {
+    cursor: pointer;
+}
+
+/* ================= Portfolio Section ================= */
+.portfolio {
+    padding: 80px 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.portfolio-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.portfolio-content {
+    width: 22%;
+    margin: 10px;
+    position: relative;
+    overflow: hidden; /* Ensure overflow hidden for animations */
+    border-radius: 10px; /* Rounded corners for portfolio items */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for items */
+}
+
+.portfolio-img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    transition: transform 0.3s ease; /* Smooth transition for image scaling */
+}
+
+.portfolio-img:hover {
+    transform: scale(1.05); /* Slightly enlarges image on hover */
+}
+
+.portfolio-data {
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* ================= Testimonial Section ================= */
+.testimonial {
+    padding: 80px 20px;
+    background-color: #e7e7e7;
+    text-align: center;
+}
+
+.testimonial-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.testimonial-content {
+    width: 30%;
+    margin: 20px;
+}
+
+.testimonial-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+/* ================= Animations ================= */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 @keyframes fadeInUp {
     from {
         opacity: 0;
-        transform: translateY(20px);
+        transform: translateY(10px);
     }
     to {
         opacity: 1;
@@ -336,7 +333,7 @@ footer a:hover {
 @keyframes fadeInDown {
     from {
         opacity: 0;
-        transform: translateY(-20px);
+        transform: translateY(-10px);
     }
     to {
         opacity: 1;
@@ -344,18 +341,7 @@ footer a:hover {
     }
 }
 
-@keyframes slideInLeft {
-    from {
-        opacity: 0;
-        transform: translateX(-100%);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-@keyframes slideInRight {
+@keyframes slideIn {
     from {
         opacity: 0;
         transform: translateX(100%);
@@ -366,30 +352,7 @@ footer a:hover {
     }
 }
 
-@keyframes zoomIn {
-    from {
-        opacity: 0;
-        transform: scale(0.5);
-    }
-    to {
-        opacity: 1;
-        transform: scale(1);
-    }
-}
-
-@keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {
-        transform: translateY(0);
-    }
-    40% {
-        transform: translateY(-20px);
-    }
-    60% {
-        transform: translateY(-10px);
-    }
-}
-
-@keyframes fillProgress {
+@keyframes expand {
     from {
         width: 0;
     }
@@ -398,53 +361,5 @@ footer a:hover {
     }
 }
 
-@keyframes fillBar {
-    from {
-        width: 0;
-    }
-    to {
-        width: 100%;
-    }
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-@keyframes slideUp {
-    from {
-        opacity: 0;
-        transform: translateY(50px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes pulse {
-    0% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.05);
-    }
-    100% {
-        transform: scale(1);
-    }
-}
-
-/* Button hover animation */
-button:hover {
-    animation: pulse 0.5s ease-in-out;
-}
-
-/* Smooth fade in for all sections */
-section {
-    animation: fadeIn 1s ease-in-out;
-    }
+/* ================= Media Queries ================= */
+@media (max-width
