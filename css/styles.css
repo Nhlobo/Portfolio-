@@ -117,178 +117,95 @@ section {
   align-items: center;
 }
 
-/* PROFILE SECTION */
-#profile {
+/* Make profile picture round and add animations */
+.profile img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border: 4px solid #f0f0f0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Project Section Styling */
+.project-section {
   display: flex;
   justify-content: center;
-  gap: 5rem;
-  height: 80vh;
-}
-
-.section__pic-container {
-  display: flex;
-  margin: auto;
-  height: 400px;
-  width: 400px;
-}
-
-.section__text {
-  align-self: center;
-  text-align: center;
-}
-
-.title {
-  font-size: 3rem;
-  text-align: center;
-}
-
-/* PROJECTS SECTION */
-#projects {
-  position: relative;
-  padding: 6vh 0;
-  background: #f7f7f7;
-}
-
-.project-container {
+  align-items: center;
   overflow: hidden;
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
   position: relative;
-  padding: 2rem;
+  max-width: 100%;
 }
 
 .project-slider {
   display: flex;
-  gap: 2rem;
-  transition: transform 0.5s ease-in-out;
-  cursor: grab;
   scroll-behavior: smooth;
+  overflow-x: auto;
+  scrollbar-width: none; /* Hide scrollbar */
+  -ms-overflow-style: none; /* For IE and Edge */
 }
 
-.project-slide {
-  min-width: 300px;
+.project-slider::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for Chrome, Safari and Opera */
+}
+
+.project-card {
+  flex: 0 0 auto;
+  width: 300px;
   height: 400px;
-  background-color: white;
-  border-radius: 1rem;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  position: relative;
-  overflow: hidden;
+  margin: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
 }
 
-.project-slide:hover {
-  transform: scale(1.05);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
-}
-
-.project-img {
+.project-card img {
   width: 100%;
-  height: 250px;
+  height: 60%;
   object-fit: cover;
-  border-top-left-radius: 1rem;
-  border-top-right-radius: 1rem;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
-.project-content {
-  padding: 1rem;
-  text-align: center;
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-.project-title {
-  margin-top: 1rem;
-  font-size: 1.5rem;
-  color: #333;
-  font-weight: 600;
-}
-
-.project-description {
-  margin-top: 0.5rem;
-  font-size: 1rem;
-  color: #666;
-}
-
-.project-button {
-  display: inline-block;
-  margin-top: 1rem;
-  padding: 0.5rem 1.5rem;
-  border: none;
-  background-color: #007bff;
-  color: white;
-  border-radius: 0.5rem;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.project-button:hover {
-  background-color: #0056b3;
-}
-
-/* HORIZONTAL SLIDING WITH ARROWS */
+/* Slider Navigation Arrows */
 .slider-nav {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  width: 40px;
-  height: 40px;
-  background-color: #007bff;
-  color: white;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  font-size: 2rem;
   cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.slider-nav:hover {
-  background-color: #0056b3;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
 }
 
 .slider-nav.left {
-  left: -20px;
+  left: 10px;
 }
 
 .slider-nav.right {
-  right: -20px;
+  right: 10px;
 }
 
-/* ANIMATIONS */
-@keyframes slide-in {
-  from {
-    opacity: 0;
-    transform: translateX(100%);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
+.slider-nav:hover {
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
-.project-slide {
-  animation: slide-in 1s ease-in-out;
-}
-
-.project-slide:hover img {
-  filter: brightness(80%);
-  transform: scale(1.1);
-}
-
-/* RESPONSIVE */
-@media screen and (max-width: 768px) {
-  .project-slide {
-    min-width: 90%;
-    height: 350px;
-  }
-
-  .slider-nav {
-    width: 35px;
-    height: 35px;
-  }
-
-  .project-title {
-    font-size: 1.25rem;
-  }
+/* Touch Swipe Functionality */
+.project-slider {
+  touch-action: pan-x;
 }
 
 /* CONTACT SECTION */
