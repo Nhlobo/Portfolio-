@@ -1,0 +1,302 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body */
+body {
+    line-height: 1.6;
+    background-color: #f8f9fa; /* Light background for contrast */
+    color: #343a40; /* Dark text for readability */
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    background: #007bff; /* Primary color */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+/* Home Section */
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 20px;
+    background: linear-gradient(to right, #007bff, #00c6ff); /* Gradient background */
+    color: #fff;
+}
+
+.home-title {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.home-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.home-description {
+    margin: 20px 0;
+    font-size: 1rem;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #28a745; /* Green button */
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.button:hover {
+    background-color: #218838; /* Darker green on hover */
+    transform: translateY(-2px); /* Lift effect */
+}
+
+.home-img {
+    flex: 1;
+}
+
+.home-blob-img {
+    width: 100%;
+    max-width: 450px; /* Ensure image does not exceed this size */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Social Media Icons */
+.home-social {
+    margin-top: 20px;
+}
+
+.home-social-icon {
+    margin-right: 15px;
+    color: #fff;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+.home-social-icon:hover {
+    color: #ffd700; /* Gold color on hover */
+}
+
+/* Scroll Button */
+.home-scroll {
+    margin-top: 40px;
+}
+
+.home-scroll-button {
+    font-size: 1rem;
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.home-scroll-button:hover {
+    color: #ffd700; /* Gold color on hover */
+}
+
+/* Skills Section */
+.skills {
+    padding: 60px 0;
+    background-color: #fff;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.section-subtitle {
+    text-align: center;
+    color: #6c757d;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.skills-content {
+    flex: 1;
+    margin: 20px;
+}
+
+.skills-header {
+    margin-bottom: 20px;
+}
+
+.skills-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.skills-bar {
+    height: 10px;
+    background-color: #007bff;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+/* Qualification Section */
+.qualification {
+    padding: 60px 0;
+    background-color: #f8f9fa;
+}
+
+.qualification-tabs {
+    display: flex;
+    justify-content: center;
+}
+
+.qualification-button {
+    padding: 10px 20px;
+    cursor: pointer;
+    border: 1px solid #007bff;
+    color: #007bff;
+    background: transparent;
+    border-radius: 5px;
+    margin: 0 10px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.qualification-button:hover {
+    background: #007bff;
+    color: white;
+}
+
+.qualification-active {
+    background: #007bff;
+    color: white;
+}
+
+.qualification-sections {
+    text-align: center;
+}
+
+/* Services Section */
+.services {
+    padding: 60px 0;
+    background-color: #fff;
+}
+
+.services-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.services-content {
+    flex: 1;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f1f1f1; /* Light background for service cards */
+    transition: transform 0.3s;
+}
+
+.services-content:hover {
+    transform: translateY(-5px); /* Lift effect */
+}
+
+/* Portfolio Section */
+.portfolio {
+    padding: 60px 0;
+}
+
+.portfolio-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.portfolio-content {
+    flex: 1;
+    margin: 20px;
+    text-align: center;
+}
+
+.portfolio-img {
+    width: 100%;
+    max-width: 350px; /* Maintain image size */
+    height: auto; /* Keep aspect ratio */
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Testimonial Section */
+.testimonial {
+    padding: 60px 0;
+    background-color: #f8f9fa;
+}
+
+.testimonial-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.testimonial-content {
+    flex: 1;
+    margin: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+    background: #343a40;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .home {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .home-img {
+        margin: 20px 0;
+    }
+
+    .skills-container, .services-container, .portfolio-container, .testimonial-container {
+        flex-direction: column;
+    }
+
+    .skills-content, .services-content, .portfolio-content, .testimonial-content {
+        width: 100%;
+    }
+}
