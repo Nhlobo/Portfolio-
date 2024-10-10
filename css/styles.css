@@ -446,3 +446,94 @@ footer p {
     flex-wrap: wrap;
   }
   #contact,
+  #projects {
+    flex-direction: column;
+  }
+
+  .contact-info-upper-container {
+    width: 80%;
+  }
+  
+  #experience {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .experience-details-container {
+    align-items: center;
+    text-align: center;
+  }
+
+  article {
+    width: 90%; /* Make articles take more width on smaller screens */
+  }
+
+  .project-img {
+    max-height: 200px; /* Adjust max height for smaller screens */
+  }
+
+  .btn-container {
+    flex-direction: column; /* Stack buttons vertically */
+  }
+
+  nav {
+    flex-direction: column; /* Stack navigation items vertically on small screens */
+  }
+
+  .hamburger-menu {
+    display: flex; /* Ensure hamburger menu shows on mobile */
+  }
+
+  .menu-links {
+    flex-direction: column; /* Stack menu links vertically */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    justify-content: center;
+    padding: 1rem 0;
+  }
+
+  .nav-links {
+    font-size: 1.2rem; /* Reduce font size for mobile navigation */
+  }
+
+  .title {
+    font-size: 2rem; /* Adjust title size for smaller screens */
+  }
+
+  .section__pic-container {
+    height: 250px; /* Reduce profile picture height */
+    width: 250px; /* Reduce profile picture width */
+  }
+
+  #about .about-pic {
+    height: 200px; /* Adjust about section image size */
+    width: 200px; /* Adjust about section image size */
+  }
+
+  #projects .project-img {
+    max-height: 150px; /* Further reduce project image height */
+  }
+}
+
+/* Media Queries for Very Small Screens */
+
+@media screen and (max-width: 480px) {
+  .nav-links {
+    font-size: 1rem; /* Further reduce font size for navigation */
+  }
+
+  .title {
+    font-size: 1.5rem; /* Reduce title size for extra small screens */
+  }
+
+  .section__text__p2 {
+    font-size: 1.5rem; /* Adjust paragraph size */
+  }
+
+  .contact-info-container {
+    flex-direction: column; /* Stack contact info vertically */
+  }
+}
