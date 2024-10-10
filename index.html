@@ -3,422 +3,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Novice Mathebula's Portfolio</title>
+    <title>Novice Mathebula | Full-Stack Developer Portfolio</title>
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"> <!-- Font Awesome for icons -->
-    <link href="https://cdn.jsdelivr.net/npm/animate.css/animate.min.css" rel="stylesheet"> <!-- Animate.css for animations -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/animate.css/animate.min.css" rel="stylesheet">
 </head>
 <body>
 
-<!-- ================= HOME ================ -->
+<!-- ================= HEADER ================= -->
+<header class="header" id="header">
+    <nav class="nav container">
+        <a href="#home" class="nav-logo">Novice Mathebula</a>
+        <div class="nav-menu" id="nav-menu">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+                <li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<!-- ================= HOME ================= -->
 <section class="home" id="home">
     <div class="home-container container">
         <div class="home-content">
-            <h1 class="home-title">Welcome to My Portfolio</h1>
-            <h3 class="home-subtitle">I'm Novice Mathebula, a Full-Stack Developer</h3>
-            <p class="home-description">
-                I specialize in creating dynamic and responsive websites tailored to meet your business needs. 
-                With expertise in both front-end and back-end development, I ensure that your project is handled with professionalism and attention to detail. 
-                Let's turn your vision into reality!
-            </p>
-            <a href="YOUR_CV_LINK" class="button"> <!-- Replace YOUR_CV_LINK with the actual CV link -->
-                View My CV <i class="uil uil-eye"></i>
-            </a>
-            <a href="YOUR_QUALIFICATION_LINK" class="button"> <!-- Replace YOUR_QUALIFICATION_LINK with the actual qualification link -->
-                View Qualification <i class="uil uil-graduation-cap"></i>
-            </a>
+            <h1 class="home-title">Novice Mathebula</h1>
+            <h3 class="home-subtitle">Full-Stack Developer</h3>
+            <p class="home-description">I create innovative and dynamic web solutions that drive business success. Let's collaborate to turn your ideas into reality with engaging, scalable web applications.</p>
+            <a href="#contact" class="button">Hire Me</a>
         </div>
         <div class="home-img">
-            <img src="assets/img/your_image.png" alt="Novice Mathebula's picture" class="home-blob-img"/>
-        </div>
-        <div class="home-social">
-            <a href="https://www.linkedin.com/in/nhlovo-mathebula/" target="_blank" class="home-social-icon">
-                <i class="fab fa-linkedin"></i>
-            </a>
-            <a href="https://github.com/Nhlobo" target="_blank" class="home-social-icon">
-                <i class="fab fa-github"></i>
-            </a>
-            <a href="https://twitter.com/nhlovo_m" target="_blank" class="home-social-icon">
-                <i class="fab fa-twitter"></i>
-            </a>
-        </div>
-        <div class="home-scroll">
-            <a href="#skills" class="home-scroll-button">
-                <i class="uil uil-mouse-alt"></i>
-                <span>Scroll down</span>
-                <i class="uil uil-arrow-down"></i>
-            </a>
-        </div>
-    </div>
-</section>    
-    
-<!-- ================= SKILLS ================ -->
-<section class="skills" id="skills">
-    <h2 class="section-title">Skills</h2>
-    <span class="section-subtitle">My Technical Level</span>
-
-    <div class="skills-container container">
-        <div class="skills-content">
-            <div class="skills-header">
-                <h1 class="skills-title">Front-End Development</h1>
-                <span class="skills-subtitle">Specializing in Modern Technologies</span>
-            </div>
-            <div class="skills-list">
-                <div class="skills-data">
-                    <h3 class="skills-name">HTML</h3>
-                    <div class="skills-bar" style="width: 90%;"></div>
-                </div>
-                <div class="skills-data">
-                    <h3 class="skills-name">CSS</h3>
-                    <div class="skills-bar" style="width: 85%;"></div>
-                </div>
-                <div class="skills-data">
-                    <h3 class="skills-name">JavaScript</h3>
-                    <div class="skills-bar" style="width: 80%;"></div>
-                </div>
-                <div class="skills-data">
-                    <h3 class="skills-name">React</h3>
-                    <div class="skills-bar" style="width: 75%;"></div>
-                </div>
-                <div class="skills-data">
-                    <h3 class="skills-name">Responsive Design</h3>
-                    <div class="skills-bar" style="width: 90%;"></div>
-                </div>
-            </div>
-        </div>
-        <div class="skills-content">
-            <div class="skills-header">
-                <h1 class="skills-title">Back-End Development</h1>
-                <span class="skills-subtitle">1 year</span>
-            </div>
-            <div class="skills-list">
-                <div class="skills-data">
-                    <h3 class="skills-name">Python</h3>
-                    <div class="skills-bar" style="width: 70%;"></div>
-                </div>
-                <div class="skills-data">
-                    <h3 class="skills-name">Flask</h3>
-                    <div class="skills-bar" style="width: 65%;"></div>
-                </div>
-                <div class="skills-data">
-                    <h3 class="skills-name">SQL</h3>
-                    <div class="skills-bar" style="width: 60%;"></div>
-                </div>
-                <div class="skills-data">
-                    <h3 class="skills-name">APIs</h3>
-                    <div class="skills-bar" style="width: 75%;"></div>
-                </div>
-                <div class="skills-data">
-                    <h3 class="skills-name">Git & GitHub</h3>
-                    <div class="skills-bar" style="width: 80%;"></div>
-                </div>
-            </div>
+            <img src="assets/img/your_image.png" alt="Novice Mathebula" class="home-blob-img"> <!-- Your picture goes here -->
         </div>
     </div>
 </section>
 
-<!-- ================= QUALIFICATION ================ -->
-<section class="qualification" id="qualification">
-    <h2 class="section-title">Qualification</h2>
-    <span class="section-subtitle">My Personal Journey</span>
-
-    <div class="qualification-container container">
-        <div class="qualification-tabs">
-            <div class="qualification-button qualification-active" data-target="#education">
-                <i class="uil uil-graduation-cap"></i>
-                Education
-            </div>
-        </div>
-
-        <div class="qualification-sections">
-            <div class="qualification-content qualification-active" id="education">
-                <div class="qualification-data">
-                    <h3 class="qualification-title">
-                        Full-Stack Software Engineer
-                        <span style="font-size: 80%">(Specializing in Front-End Development)</span>
-                    </h3>
-                    <span class="qualification-subtitle">ALX Foundation of Computer Science and Software Engineering</span>
-                    <div class="qualification-calendar">
-                        <i class="uil uil-calendar-alt"></i>
-                        Graduated: Sep 2024
-                    </div>
-                </div>
-            </div>
-        </div>
+<!-- ================= ABOUT ================= -->
+<section class="about" id="about">
+    <div class="about-container container">
+        <h2 class="section-title">About Me</h2>
+        <p class="about-description">
+            I'm a passionate full-stack developer with expertise in both front-end and back-end technologies, including HTML, CSS, JavaScript, Python, and Flask. 
+            I build responsive, high-performance web applications with a focus on usability, scalability, and engaging user experiences.
+        </p>
+        <a href="YOUR_QUALIFICATION_LINK" class="button">View My Qualification</a> <!-- Updated text here -->
     </div>
 </section>
 
-<!-- ================= SERVICES ================ -->
+<!-- ================= SERVICES ================= -->
 <section class="services" id="services">
-    <h2 class="section-title">Services</h2>
-    <span class="section-subtitle">What I Offer</span>
+    <h2 class="section-title">My Services</h2>
     <div class="services-container container">
-
         <div class="services-content">
-            <h3 class="services-title">Full-Stack Web Development</h3>
-            <span class="button services-button">View More</span>
-            <div class="services-modal">
-                <div class="services-modal-content">
-                    <h4 class="services-modal-title">Full-Stack Web Development</h4>
-                    <ul class="services-modal-services">
-                        <li>Develop responsive and user-friendly web applications.</li>
-                        <li>Build dynamic APIs and integrate with various databases.</li>
-                        <li>Implement server-side logic and manage deployment processes.</li>
-                        <li>Ensure security best practices in all applications.</li>
-                        <li>Optimize web applications for maximum speed and scalability.</li>
-                    </ul>
-                </div>
-            </div>
+            <h3 class="services-title">Web Development</h3>
+            <p class="services-description">
+                I design and develop responsive, high-performance websites and applications that engage users and meet your business goals.
+            </p>
         </div>
 
         <div class="services-content">
-            <h3 class="services-title">Front-End Development</h3>
-            <span class="button services-button">View More</span>
-            <div class="services-modal">
-                <div class="services-modal-content">
-                    <h4 class="services-modal-title">Front-End Development</h4>
-                    <ul class="services-modal-services">
-                        <li>Create visually appealing and intuitive user interfaces.</li>
-                        <li>Utilize modern frameworks and libraries for enhanced user experiences.</li>
-                        <li>Conduct usability testing and gather feedback to refine applications.</li>
-                        <li>Ensure cross-browser compatibility and responsiveness across devices.</li>
-                    </ul>
-                </div>
-            </div>
+            <h3 class="services-title">API Integration</h3>
+            <p class="services-description">
+                I create and integrate RESTful APIs, ensuring seamless communication between front-end and back-end systems.
+            </p>
+        </div>
+
+        <div class="services-content">
+            <h3 class="services-title">Full-Stack Solutions</h3>
+            <p class="services-description">
+                From concept to deployment, I provide end-to-end web development services, ensuring a smooth user experience and reliable performance.
+            </p>
         </div>
     </div>
 </section>
-    
-<!-- ================= PORTFOLIO ================ -->
+
+<!-- ================= PORTFOLIO ================= -->
 <section class="portfolio" id="portfolio">
-    <h2 class="section-title">Showcase</h2>
-    <span class="section-subtitle">Projects & Collaborations</span>
-
+    <h2 class="section-title">Portfolio</h2>
     <div class="portfolio-container container">
-        <div class="portfolio-content">
-            <img src="assets/img/projects/Quran Knowledge Quiz.png" alt="Quran Knowledge Quiz" class="portfolio-img">
-            <div class="portfolio-data">
-                <h3 class="portfolio-title">Quran Knowledge Quiz</h3>
-                <a href="https://nhlobo.github.io/quran-knowledge-quiz/" class="button portfolio-button">View</a>
-            </div>
+        <div class="portfolio-item">
+            <img src="assets/img/projects/Quran Knowledge Quiz.png" alt="Quran Knowledge Quiz">
+            <h3>Quran Knowledge Quiz</h3>
+            <a href="https://nhlobo.github.io/quran-knowledge-quiz/" class="button">View Project</a>
         </div>
 
-        <div class="portfolio-content">
-            <img src="assets/img/projects/Calendar App.png" alt="Calendar App" class="portfolio-img">
-            <div class="portfolio-data">
-                <h3 class="portfolio-title">Calendar App</h3>
-                <a href="https://test2-4-dxs5.onrender.com" class="button portfolio-button">View</a>
-            </div>
+        <div class="portfolio-item">
+            <img src="assets/img/projects/Calendar App.png" alt="Calendar App">
+            <h3>Calendar App</h3>
+            <a href="https://test2-4-dxs5.onrender.com" class="button">View Project</a>
         </div>
 
-        <div class="portfolio-content">
-            <img src="assets/img/projects/Calculator.png" alt="Calculator" class="portfolio-img">
-            <div class="portfolio-data">
-                <h3 class="portfolio-title">Calculator</h3>
-                <a href="https://nhlobo.github.io/calculator/" class="button portfolio-button">View</a>
-            </div>
+        <div class="portfolio-item">
+            <img src="assets/img/projects/Calculator.png" alt="Calculator">
+            <h3>Calculator</h3>
+            <a href="https://nhlobo.github.io/calculator/" class="button">View Project</a>
         </div>
 
-        <div class="portfolio-content">
-            <img src="assets/img/projects/Weather Forecast App.png" alt="Weather Forecast App" class="portfolio-img">
-            <div class="portfolio-data">
-                <h3 class="portfolio-title">Weather Forecast App</h3>
-                <a href="https://weather-ebon-beta.vercel.app/" class="button portfolio-button">View</a>
-            </div>
+        <div class="portfolio-item">
+            <img src="assets/img/projects/Weather Forecast App.png" alt="Weather Forecast App">
+            <h3>Weather Forecast App</h3>
+            <a href="https://weather-ebon-beta.vercel.app/" class="button">View Project</a>
         </div>
     </div>
 </section>
 
-<!-- ================= TESTIMONIAL ================ -->
-<section class="testimonial" id="testimonial">
-    <h2 class="section-title">Testimonials</h2>
-    <span class="section-subtitle">What my collaborators say</span>
-
-    <div class="testimonial-container container">
-        <div class="testimonial-content">
-            <div class="testimonial-header">
-                <img src="assets/img/testimonial0.jpeg" alt="Selina Maphuti Kganyaho" class="testimonial-img"/>
-                <div>
-                    <h3 class="testimonial-name">Maphuti Kganyaho</h3>
-                    <span class="testimonial-client">Agricultural Management Student</span>
-                </div>
-            </div>
-            <p class="testimonial-description">
-                "Novice Mathebula is an exceptional developer with a rare combination of creativity, technical prowess, and strategic thinking. 
-                His contributions were invaluable, whether in resolving complex technical issues or delivering innovative solutions. 
-                He consistently goes above and beyond, ensuring that all work is not only completed but exceeds expectations."
-            </p>
-        </div>
-
-        <div class="testimonial-content">
-            <div class="testimonial-header">
-                <img src="assets/img/testimonial1.png" alt="Lebo Mosia" class="testimonial-img"/>
-                <div>
-                    <h3 class="testimonial-name">Steve</h3>
-                    <span class="testimonial-client">Software Engineering Peer | ALX</span>
-                </div>
-            </div>
-            <p class="testimonial-description">
-                "Working alongside Novice was an enriching experience. His technical knowledge is second to none, and his problem-solving skills are outstanding."
-            </p>
-        </div>
-
-        <div class="testimonial-content">
-            <div class="testimonial-header">
-                <img src="assets/img/testimonial2.jpeg" alt="Thabo Mahlangu" class="testimonial-img"/>
-                <div>
-                    <h3 class="testimonial-name">Peter</h3>
-                    <span class="testimonial-client">Project Manager | TechConnect</span>
-                </div>
-            </div>
-            <p class="testimonial-description">
-                "Novice’s contribution to the TechConnect project was nothing short of transformative. His ability to merge functionality with aesthetics greatly improved our user experience."
-            </p>
-        </div>
-    </div>
-</section>
-    
-<!-- ================= CONTACT ================ -->
+<!-- ================= CONTACT ================= -->
 <section class="contact" id="contact">
     <h2 class="section-title">Contact Me</h2>
-    <span class="section-subtitle">Get in Touch</span>
-
-    <div class="contact-container">
-        <h1>Contact Me</h1>
-        <form action="https://formspree.io/f/xeoqjwgw" class="contact-form" id="contactForm">
-            <div class="form-group">
-                <label for="name">Your Name</label>
-                <input type="text" id="name" name="name" required minlength="2" maxlength="50" 
-                    pattern="[a-zA-Z ]+" title="Please enter a valid name (letters and spaces only)">
-            </div>
-            <div class="form-group">
-                <label for="email">Your Email</label>
-                <input type="email" id="email" name="email" required title="Please enter a valid email address">
-            </div>
-            <div class="form-group">
-                <label for="message">Your Message</label>
-                <textarea id="message" name="message" rows="5" required minlength="10" maxlength="500"
-                    title="Message should be between 10 and 500 characters"></textarea>
-            </div>
-            <button type="submit" class="button contact-button">Send Message</button>
+    <p class="contact-description">Let's discuss your project and how I can help you bring your ideas to life!</p>
+    <div class="contact-container container">
+        <form action="https://formspree.io/YOUR_EMAIL" method="POST" class="contact-form">
+            <input type="text" name="name" placeholder="Your Name" required class="contact-input">
+            <input type="email" name="_replyto" placeholder="Your Email" required class="contact-input">
+            <textarea name="message" placeholder="Your Message" required class="contact-input"></textarea>
+            <button type="submit" class="button">Send Message</button>
         </form>
-
-        <div id="response" style="display:none;" aria-live="polite"></div>
     </div>
-
-    <script>
-        // Form submission and message handling script
-        document.getElementById('contactForm').addEventListener('submit', function(event) {
-            event.preventDefault(); // Prevent default form submission
-
-            // Validate inputs
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            const message = document.getElementById('message').value;
-
-            // Validate email pattern
-            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            if (!emailPattern.test(email)) {
-                showResponse('Please enter a valid email address.', 'error');
-                return;
-            }
-
-            if (!name || !email || !message) {
-                showResponse('Please fill in all required fields.', 'error');
-                return;
-            }
-
-            // Check if the user is online
-            if (!navigator.onLine) {
-                showResponse('It seems there’s an issue with your internet connection. Please check your connection and try again.', 'error');
-                return;
-            }
-
-            // Submit the form via Fetch API
-            const formData = new FormData(this);
-
-            fetch(this.action, {
-                method: 'POST',
-                body: formData,
-                headers: {
-                    Accept: 'application/json'
-                }
-            })
-            .then(response => {
-                if (response.ok) {
-                    showResponse('Thank you! Your message has been successfully sent.', 'success');
-                    this.reset(); // Reset the form after successful submission
-                } else {
-                    showResponse('Oops! There was an issue with your submission. Please try again later.', 'error');
-                }
-            })
-            .catch(error => {
-                // Catch network errors
-                if (!navigator.onLine) {
-                    showResponse('It seems there’s an issue with your internet connection. Please check your connection and try again.', 'error');
-                } else {
-                    showResponse('There was a problem with your submission. Please try again later.', 'error');
-                }
-            });
-        });
-
-        // Function to show messages dynamically
-        function showResponse(message, type) {
-            const responseDiv = document.getElementById('response');
-            responseDiv.style.display = 'block';
-            responseDiv.textContent = message;
-            responseDiv.className = type === 'success' ? 'success-message' : 'error-message';
-
-            // Optionally hide the message after a few seconds for a better user experience
-            setTimeout(() => {
-                responseDiv.style.display = 'none';
-            }, 5000);
-        }
-    </script>
-
-    <style>
-        .success-message {
-            color: #28a745;
-            background-color: #d4edda;
-            padding: 10px;
-            border-radius: 5px;
-            border: 1px solid #c3e6cb;
-            margin-top: 10px;
-        }
-
-        .error-message {
-            color: #dc3545;
-            background-color: #f8d7da;
-            padding: 10px;
-            border-radius: 5px;
-            border: 1px solid #f5c6cb;
-            margin-top: 10px;
-        }
-    </style>
 </section>
-    
-<!-- ================= FOOTER ================ -->
+
+<!-- ================= FOOTER ================= -->
 <footer class="footer">
     <div class="footer-container container">
-        <p>&copy; 2024 Novice Mathebula. All rights reserved.</p>
+        <h3>Follow Me</h3>
         <div class="footer-social">
-            <a href="https://www.linkedin.com/in/nhlovo-mathebula/" target="_blank" class="footer-social-icon">
-                <i class="fab fa-linkedin"></i>
-            </a>
-            <a href="https://github.com/Nhlobo" target="_blank" class="footer-social-icon">
-                <i class="fab fa-github"></i>
-            </a>
-            <a href="https://twitter.com/nhlovo_m" target="_blank" class="footer-social-icon">
-                <i class="fab fa-twitter"></i>
-            </a>
+            <a href="https://www.linkedin.com/in/nhlovo-mathebula/" target="_blank" class="footer-social-icon"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/Nhlobo" target="_blank" class="footer-social-icon"><i class="fab fa-github"></i></a>
+            <a href="https://twitter.com/nhlovo_m" target="_blank" class="footer-social-icon"><i class="fab fa-twitter"></i></a>
         </div>
     </div>
 </footer>
 
-<!-- ================= SCRIPTS ================= -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script src="js/main.js"></script> <!-- Link to your JavaScript file -->
-<script src="contact.js"></script>
 </body>
-                </html>
+            </html>
